@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 
 const app = express();
 
-const clientDomain = 'http://43ee336c00ea.ap.ngrok.io';
+const clientDomain = 'https://www.logicludenews.ml/';
 
 app.get("/", (req, res) => {
   const filepath = path.resolve(__dirname, "../client/build", "index.html");
