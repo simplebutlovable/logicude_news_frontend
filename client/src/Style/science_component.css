@@ -1,0 +1,56 @@
+.science_component {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.science_component .latest_science_section {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.science_component .bot_tab_science {
+  width: 100%;
+  max-width: 500px;
+  margin: 3rem auto;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 1100px) {
+  .science_component .latest_science_section {
+    display: block;
+  }
+  .science_component .latest_science_section .single_science_card {
+    width: 100%;
+  }
+  .science_component .latest_science_section .other_science_news {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .science_component .latest_science_section .single_science_card .main_science_content {
+    width: 100%;
+    display: block;
+  }
+  .science_component .latest_science_section .single_science_card .main_science_content .master_science_card {
+    width: 85%;
+    margin: 1rem auto;
+  }
+  .science_component .latest_science_section .single_science_card .main_science_content ul {
+    width: 60%;
+    margin: 1rem auto;
+  }
+}
+/*# sourceMappingURL=science_component.css.map */

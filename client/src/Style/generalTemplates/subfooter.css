@@ -1,0 +1,138 @@
+._subfooter {
+  width: 100%;
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+._subfooter .newsletter {
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.185);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+._subfooter .newsletter img {
+  width: 30px;
+}
+
+._subfooter .newsletter .img_dark {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+._subfooter .newsletter h1 {
+  font-size: 25px;
+  color: #2660b6;
+}
+
+._subfooter .newsletter p {
+  font-size: 12px;
+}
+
+._subfooter .newsletter .newsletter_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0;
+}
+
+._subfooter .newsletter .newsletter_input input[type="email"] {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  width: 75%;
+  font-size: 14px;
+  padding: 0.4rem 1rem;
+}
+
+._subfooter .newsletter .newsletter_input input[type="submit"] {
+  font-family: var(--primary_font);
+  background-color: #156ee4;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+._subfooter .submenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+._subfooter .submenu ul li {
+  margin: 0.75rem;
+  padding: 0.75rem;
+}
+
+._subfooter .submenu ul li .link:hover {
+  text-decoration: none;
+  color: red;
+}
+
+@media screen and (max-width: 1100px) {
+  ._subfooter {
+    text-align: center;
+    display: block;
+  }
+  ._subfooter .newsletter,
+  ._subfooter .submenu {
+    margin: 0 auto;
+  }
+  ._subfooter .submenu {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  ._subfooter .newsletter {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  ._subfooter .submenu ul {
+    display: block;
+  }
+  ._subfooter .submenu ul li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  ._subfooter .newsletter {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  ._subfooter .newsletter {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  ._subfooter .newsletter {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=subfooter.css.map */

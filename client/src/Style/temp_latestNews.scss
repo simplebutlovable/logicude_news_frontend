@@ -1,0 +1,128 @@
+.latest_news {
+  width:100%;
+  height: 100%;
+}
+header {
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+  }
+}
+
+.news_container {
+  position: relative; 
+  overflow: hidden;
+  width: 100%;
+ 
+
+  .latest_news_cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+  }
+}
+
+/*PAGE SELECTORS*/
+.selector_controller {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  img {
+    padding: 1rem;
+    cursor: pointer;
+    width: 50px;
+    background-color: rgba(128, 128, 128, 0.493);
+    transition: 0.3s linear;
+    &:hover {
+      background-color: rgb(26, 26, 26);
+    }
+  }
+  .next {
+    img {
+      margin-left: 4px;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+/*Page Indicators*/
+.page_inidicator {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  margin-top: 0.75rem;
+  .g_page {
+    margin: 0 0.2rem;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+}
+
+/*Latest News Cards*/
+.latest_card {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.2s ease-in-out;
+  }
+  .latest_news_text {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--article_text_background);
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    color: white;
+    .post_details {
+      display: flex;
+      margin-bottom: 1rem;
+      justify-content: space-between;
+      font-size: 0.75rem;
+    }
+    .post_category{
+      ul{
+        list-style: none;
+        display: flex;
+        li{
+          margin:0 0.75rem 0.75rem 0;
+          background-color:rgb(141, 141, 141);
+          font-size: 12px;
+          padding: 0.2rem 0.5rem;
+        }
+      }
+    }
+  }
+  &:hover img {
+    transform: scale(1.05);
+  }
+  &:hover .latest_news_title {
+    text-decoration: underline;
+  }
+}
+
+.latest_news_text {
+  .latest_news_title {
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/*end of Latest News Cards*/

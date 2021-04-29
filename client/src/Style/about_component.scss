@@ -1,0 +1,35 @@
+.about_component{
+    height: 100vh;
+    
+.about_details{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    .about_logo{
+     
+        img{
+            width: 200px;
+        }
+       
+    }
+    .dev_info{
+        margin-top: 2rem;
+        .developer_social_media{
+            ul{
+                width: 50%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-evenly;
+                list-style: none;
+                li{
+                    img{
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+}

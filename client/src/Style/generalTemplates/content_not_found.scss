@@ -1,0 +1,15 @@
+.not_found {
+    width: 100%;
+    height: calc(100vh - 102px);
+
+    .error_display {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        h1{
+            font-size: 5rem;
+        }
+    }
+}

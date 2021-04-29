@@ -1,0 +1,13 @@
+.gadgets_component {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.gadgets_component .top_gadgets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=gadgets_component.css.map */

@@ -1,0 +1,2 @@
+(this.webpackJsonpcounter=this.webpackJsonpcounter||[]).push([[9],{121:function(e,t,n){"use strict";n.r(t);var a=n(0),l=n.n(a),c=n(17);t.default=function(){return l.a.createElement(l.a.Fragment,null,l.a.createElement(c.a,null,l.a.createElement("title",null,"Logiclude News- Streaming")),l.a.createElement("div",{className:"streaming_component"},l.a.createElement("div",{className:"games_component",style:{height:"100vh",textAlign:"center"}},l.a.createElement("h1",null,"Page Under Construction "))))}}}]);
+//# sourceMappingURL=9.13db80bd.chunk.js.map

@@ -1,0 +1,44 @@
+--------------------------------------------BUG LIST --------------------------------------
+1. Error Message: 
+		Warning: Can't perform a React state update on an unmounted component. 
+		This is a no-op, but it indicates a memory leak in your application. 
+		To fix, cancel all subscriptions and asynchronous tasks in a useEffect 
+		cleanup function
+
+
+  Event Trigger : 
+		When i click another link even if the other one is not dont rendering 
+		yet.
+
+
+
+2. Navbar burger menu search input interfering the onClick event
+ 
+
+
+
+-------------------------------------------TO MAKE------------------------------------------
+
+1. Science Component
+2. Gadgets Component
+3. Games Component
+4. Streaming Component
+
+
+-------------------------------------------TO FIX-------------------------------------------
+
+1. Fix memory leak when component is not done rendering
+2. 
+
+
+
+
+-----------------------------------------NOTE-------------------------------------------------
+1. Newsletter post request
+2. Fix twitter meta tag image not showing
+3. Fix night mode rerender
+4. Prevent re render if props is changed
+
+
+
+CDN--- Cloudinary

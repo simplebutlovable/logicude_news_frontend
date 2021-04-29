@@ -1,0 +1,36 @@
+.footer {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d202ff), to(#9400c4));
+  background-image: linear-gradient(#d202ff, #9400c4);
+  padding: 0.7rem 0;
+  color: white;
+}
+
+.footer .footer_container {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer_container .footer_info img {
+  width: 100px;
+}
+
+.footer .footer_container .footer_info p {
+  font-size: 12px;
+}
+
+.footer .footer_container .advertise h1 {
+  font-size: 17px;
+  padding: 0.7rem 1rem;
+  background-color: #5e5e5e;
+}
+/*# sourceMappingURL=footer.css.map */

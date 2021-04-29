@@ -1,0 +1,18 @@
+.not_found {
+  width: 100%;
+  height: calc(100vh - 102px);
+}
+
+.not_found .error_display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.not_found .error_display h1 {
+  font-size: 5rem;
+}
+/*# sourceMappingURL=content_not_found.css.map */

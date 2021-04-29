@@ -1,0 +1,94 @@
+.editors_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.editors_content .editors_single_card {
+  width: 55%;
+  max-height: 260px;
+  position: relative;
+  overflow: hidden;
+}
+
+.editors_content .editors_single_card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.editors_content .editors_single_card .single_card_description {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.editors_content .editors_single_card .single_card_description .single_card_container {
+  color: white;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.editors_content .editors_single_card .single_card_description .single_card_container .single_card_title {
+  padding: 0 1rem;
+}
+
+.editors_content .editors_single_card .single_card_description .single_card_container .single_card_post_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.editors_content .editors_single_card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.editors_content .editors_single_card:hover .single_card_title p {
+  text-decoration: underline;
+}
+
+.editors_content .editors_news_list {
+  width: 45%;
+  padding: 0 1rem;
+}
+
+.editors_content .editors_news_list ul {
+  list-style: none;
+}
+
+.editors_content .editors_news_list ul li {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid gray;
+}
+
+@media screen and (max-width: 870px) {
+  .editors_content {
+    border-radius: 8px;
+    display: block;
+  }
+  .editors_content .editors_single_card {
+    width: 100%;
+  }
+  .editors_content .editors_news_list {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+/*# sourceMappingURL=editors_choice.css.map */

@@ -1,0 +1,26 @@
+.games {
+  padding: 0.5rem 1rem;
+  background-color: var(--categorized_component_background);
+  border-radius: 8px;
+  height: 100%;
+}
+
+.games .games_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid gray;
+}
+
+.games .games_header .more_games {
+  padding-right: 0.75rem;
+  text-decoration: none;
+  color: red;
+}
+/*# sourceMappingURL=games.css.map */

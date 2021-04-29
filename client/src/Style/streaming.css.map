@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,OAAO,EAAC,WAAW;EACnB,gBAAgB,EAAE,uCAAuC;EACzD,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,IAAI;CAaf;;AAjBD,AAMI,UANM,CAMN,iBAAiB,CAAC;EACd,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;EACnB,aAAa,EAAE,cAAc;CAMhC;;AAhBL,AAWQ,UAXE,CAMN,iBAAiB,CAKb,eAAe,CAAC;EACZ,aAAa,EAAC,OAAO;EACrB,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,GAAG;CACb",
+    "sources": [
+        "streaming.scss"
+    ],
+    "names": [],
+    "file": "streaming.css"
+}

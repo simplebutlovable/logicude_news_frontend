@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAA;EACd,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;CAKjB;;AAPD,AAGI,kBAHc,CAGd,YAAY,CAAA;EACR,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "gadgets_component.scss"
+    ],
+    "names": [],
+    "file": "gadgets_component.css"
+}

@@ -1,0 +1,18 @@
+.games {
+  padding:0.5rem 1rem;
+  background-color: var(--categorized_component_background);
+  border-radius: 8px;
+  height: 100%;
+
+  .games_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid gray;
+      .more_games {
+          padding-right:0.75rem;
+          text-decoration: none;
+          color: red;
+      }
+  }
+}

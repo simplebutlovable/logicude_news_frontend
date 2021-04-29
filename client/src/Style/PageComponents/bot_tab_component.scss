@@ -1,0 +1,40 @@
+.bot_tab_news{
+    width: 100%;
+    .headline_tab{
+        border-bottom: 1px solid gray;
+        position: relative;
+        img{
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+        }
+        .headline_desc{
+            padding: 1rem;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            h3{
+                color: white;
+                font-size: 17px;
+                font-weight: 400;
+            }
+        }
+    }
+    ul{
+        margin-top: 1rem;
+        list-style: none;
+        padding:0 1rem;
+        li{
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.171);
+            .headlink{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+          
+        }
+        
+    }
+}

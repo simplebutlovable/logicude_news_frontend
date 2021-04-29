@@ -1,0 +1,66 @@
+.science_component {
+    width: 95%;
+    margin: 0 auto;
+
+    .latest_science_section {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .bot_tab_science{
+        width: 100%;
+        max-width: 500px;
+        margin: 3rem auto;
+    }
+
+
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+// Media Query
+
+@media screen and (max-width : 1100px){
+    .science_component{
+        .latest_science_section{
+            display: block;
+            .single_science_card{
+                width: 100%;
+            }
+            .other_science_news{
+                width: 85%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width : 800px){
+    .science_component{
+        .latest_science_section{
+            .single_science_card{
+              .main_science_content{
+                width: 100%;
+                display: block;
+                .master_science_card{
+                    width: 85%;
+                    margin: 1rem auto;  
+                }
+                ul{
+                    width: 60%;
+                    margin: 1rem auto; 
+                }
+              }
+            }
+        }
+    }
+}

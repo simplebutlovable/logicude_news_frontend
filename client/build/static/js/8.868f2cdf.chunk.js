@@ -1,0 +1,2 @@
+(this.webpackJsonpcounter=this.webpackJsonpcounter||[]).push([[8],{120:function(e,t,n){"use strict";n.r(t);var a=n(0),l=n.n(a),c=n(17);t.default=function(){return l.a.createElement(l.a.Fragment,null,l.a.createElement(c.a,null,l.a.createElement("title",null,"Logiclude News- Games")),l.a.createElement("div",{className:"games_component",style:{height:"100vh",textAlign:"center"}},l.a.createElement("h1",null,"Page Under Construction ")))}}}]);
+//# sourceMappingURL=8.868f2cdf.chunk.js.map
