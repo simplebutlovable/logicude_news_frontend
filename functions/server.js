@@ -4,7 +4,7 @@ const fs = require("fs");
 const axios = require ('axios');
 const { htmlToText } = require('html-to-text');
 const PORT = process.env.PORT || 5000;
-
+const serverless = require ('serverless-http');
 const app = express();
 
 const clientDomain = 'https://www.logicludenews.ml/';
@@ -128,6 +128,8 @@ app.get("/news/:id", async(req, res) => {
 
 app.use(express.static(path.resolve(__dirname, "../client/build")))
 
-app.listen(PORT, ()=>{
-    console.log(`Server is listening at ${PORT}`)
-})
+module.exports.handler = serverless(app);
+
+// app.listen(PORT, ()=>{
+//     console.log(`Server is listening at ${PORT}`)
+// })
