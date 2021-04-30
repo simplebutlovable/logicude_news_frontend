@@ -4,7 +4,7 @@ export const lightTheme = {
     toggleBorder: '#FFF',
     background: '#363537',
     site_img : process.env.PUBLIC_URL + "/images/logiclude_light_mode.png",
-    mode_icon : process.env.PUBLIC_URL + "/images/day.png",
+    mode_icon : process.env.PUBLIC_URL + "/images/day_mode_icon.png",
 }
 export const darkTheme = {
     body: '#242836',
@@ -12,5 +12,5 @@ export const darkTheme = {
     toggleBorder: '#6B8096',
     background: '#999',
     site_img : process.env.PUBLIC_URL + "/images/logiclude_dark_mode.png",
-    mode_icon : process.env.PUBLIC_URL + "/images/night.png",
+    mode_icon : process.env.PUBLIC_URL + "/images/night_mode_icon.png",
 }

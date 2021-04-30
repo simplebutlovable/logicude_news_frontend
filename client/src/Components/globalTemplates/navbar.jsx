@@ -42,7 +42,7 @@ function Navigation(props) {
             </div>
             <div className="social_media_section">
               <img
-                src={process.env.PUBLIC_URL + "/images/fb_logo.png"}
+                src={process.env.PUBLIC_URL + "/images/facebook.png"}
                 alt="news_fb"
               />
               <img
@@ -241,7 +241,7 @@ function NightMode(props) {
             }
           >
             {props.mode === "light" ? <p>LIGHT</p> : <p>DARK</p>}
-            <p>MODE</p>
+
           </div>
         </div>
       </div>

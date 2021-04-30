@@ -1,16 +1,18 @@
 .navbar {
   // background-image: linear-gradient(#fe0268, #ff00a4);
-  background-image: linear-gradient(#d202ff, #9400c4);
-
+  // background-image: linear-gradient(#d202ff, #9400c4);
+  background-color: #1b2838;
   position: sticky;
   top: 0;
   z-index: 10;
+  padding-top: 0.2rem;
 }
 
 .menu {
   width: 95%;
   margin: 0 auto;
-  padding: 0.6rem;
+  padding: 0.1rem 0;
+  padding-top: 0.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,16 +46,15 @@
 
 
 .subnav {
-
-
+  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
   .subnav_container {
+    
     padding: 1rem 0;
     width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 4px solid rgba(128, 128, 128, 0.075);
 
     .site_logo {
       img {
@@ -68,10 +69,16 @@
         list-style: none;
 
         li {
-          margin: 0 1rem;
+          
           font-size: 1.1rem;
           font-weight: 600;
+          transition: 0.2s ease-in;
+          padding:0.3rem 1rem;
+        &:hover{
+          color: red;
         }
+        }
+        
       }
     }
 
@@ -147,8 +154,8 @@
 
   .night_container {
     margin-left: 0.5rem;
-    width: 85px;
-    height: 35px;
+    width: 63px;
+    height: 20px;
     border-radius: 30px;
     background-color: white;
     position: relative;
@@ -156,23 +163,24 @@
 
     .toggler {
       position: absolute;
-      width: 30px;
-      height: 30px;
+      width: 27px;
+      height: 27px;
       border-radius: 50%;
       background-color: white;
-      border: 2px solid black;
       transition: 0.5s linear;
     }
 
     .light_toggle {
+      border: 1px solid #ff9c00;
       top: 50%;
-      right: 3px;
+      right: 0;
       transform: translateY(-50%);
     }
 
     .dark_toggle {
+      border: 1px solid black;
       top: 50%;
-      left: 3px;
+      left: 0;
       transform: translateY(-50%);
     }
 
@@ -184,7 +192,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 20px;
+        width: 17px;
       }
     }
 
@@ -195,7 +203,7 @@
 
       p {
         line-height: 12px;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 700;
         transition: 0.5s linear;
       }
@@ -204,7 +212,7 @@
 
     .label_left {
       top: 50%;
-      left: 11px;
+      left: 6px;
 
       p {
         color: rgb(34, 34, 34);
@@ -213,7 +221,7 @@
 
     .label_right {
       top: 50%;
-      right: 12px;
+      right: 6px;
 
       p {
         color: white;
@@ -223,7 +231,9 @@
   }
 
   .dark_switch_container {
-    background-color: black;
+    background-color: #1b2838;
+    border: 1px solid white;
+    border-left: 0;
   }
 
   .light_switch_container {
@@ -357,6 +367,7 @@
 
         .mobile_search {
           .search {
+            margin: 0;
             img {
               filter: invert(100%);
             }
