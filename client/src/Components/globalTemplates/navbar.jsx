@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "../../Style/generalTemplates/navbar.css";
 import { darkTheme, lightTheme } from "../../utility/Themes";
 import { Link, NavLink } from "react-router-dom";
