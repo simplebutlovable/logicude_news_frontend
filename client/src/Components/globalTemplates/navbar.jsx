@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../../Style/generalTemplates/navbar.css";
 import { darkTheme, lightTheme } from "../../utility/Themes";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function currentDate() {
   const params = {
@@ -71,9 +71,12 @@ function SubNavigation(props) {
     setExpandedMenu(false);
   }
 
+  function activeLinkStyle() {
+    return { borderBottom: "2px solid gray", color: "red", cursor: "default" };
+  }
+
   return (
     <React.Fragment>
-      {expandedMenu ? <MobileMenu closeBtn={closeMenu} /> : null}
       <div
         className="subnav"
         style={
@@ -84,7 +87,7 @@ function SubNavigation(props) {
       >
         <div className="subnav_container">
           <div className="site_logo">
-            <Link to="/">
+            <Link to="/" className="site_markup">
               <img
                 src={
                   props.mode === "light"
@@ -93,48 +96,70 @@ function SubNavigation(props) {
                 }
                 alt="Logiclude"
               />
+              <h2>NEWS</h2>
             </Link>
           </div>
           <nav>
             <ul>
               <li>
-                <Link to="/" className="__link">
+                <NavLink
+                  to="/"
+                  exact
+                  activeStyle={activeLinkStyle()}
+                  className="__link"
+                >
                   HOME
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/science" className="__link">
+                <NavLink
+                  to="/science"
+                  activeStyle={activeLinkStyle()}
+                  className="__link"
+                >
                   SCIENCE
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/gadgets" className="__link">
+                <NavLink
+                  to="/gadgets"
+                  activeStyle={activeLinkStyle()}
+                  className="__link"
+                >
                   GADGETS
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/games" className="__link">
+                <NavLink
+                  to="/games"
+                  activeStyle={activeLinkStyle()}
+                  className="__link"
+                >
                   GAMES
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/stream" className="__link">
+                <NavLink
+                  to="/stream"
+                  activeStyle={activeLinkStyle()}
+                  className="__link"
+                >
                   STREAMING
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/about" className="__link">
+                <NavLink
+                  to="/about"
+                  activeStyle={activeLinkStyle()}
+                  className="__link"
+                >
                   ABOUT
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </nav>
 
           <div className="mobile_access_right">
-            <div className="mobile_search">
-              <Search viewport_mode="mobile" mode={props.mode} />
-            </div>
-
             <div className="mobile_nav">
               <div
                 className={
@@ -148,6 +173,10 @@ function SubNavigation(props) {
                 <div className="b_2 b_line"></div>
                 <div className="b_3 b_line"></div>
               </div>
+             
+                  <MobileMenu closeBtn={closeMenu} menuState={expandedMenu} />
+          
+           
             </div>
           </div>
         </div>
@@ -159,45 +188,12 @@ function SubNavigation(props) {
 export default Navigation;
 
 function Search(props) {
-  const search_icon = useRef();
-  const search = useRef();
-  const search_input = useRef();
-  // Search Expansion Function
-  function searchAnimate() {
-    let { classList: searchIconClass } = search_icon.current;
-    let { classList: searchClass } = search.current;
-    let { classList: searchInputClass } = search_input.current;
-    searchIconClass.add("search_icon_active");
-    searchClass.add("search_active");
-    searchInputClass.add("input_active");
-    search_input.current.disabled = false;
-    search_input.current.focus();
-  }
-
   return (
     <React.Fragment>
-      <div
-        className={
-          props.mode === "light" && props.viewport_mode === "mobile"
-            ? "search m_search_light"
-            : "search m_search_dark"
-        }
-        ref={search}
-      >
-        <input
-          type="text"
-          name="search__input"
-          id={props.viewport_mode}
-          placeholder="Search"
-          ref={search_input}
-          disabled={true}
-        />
-        <img
-          ref={search_icon}
-          onClick={searchAnimate}
-          src={process.env.PUBLIC_URL + "/svg/search_icon.svg"}
-          alt="search"
-        />
+      <div className="search_container">
+        <div className="search_input">
+          <input type="search" name="search" autoComplete="off" />
+        </div>
       </div>
     </React.Fragment>
   );
@@ -241,7 +237,6 @@ function NightMode(props) {
             }
           >
             {props.mode === "light" ? <p>LIGHT</p> : <p>DARK</p>}
-
           </div>
         </div>
       </div>
@@ -252,21 +247,30 @@ function NightMode(props) {
 function MobileMenu(props) {
   return (
     <React.Fragment>
-      <div className="mobile_menu">
+      <div
+        className={
+          props.menuState ? "mobile_menu mob_men_active" : "mobile_menu mob_men_inactive"
+        }
+        style={props.menuState ? { right: "0" } : { right: "-40%" }}
+      >
         <div className="mobile_menu_header">
-          <h1>LOGO</h1>
+          <div className="mobile_site_logo">
+            <img src={process.env.PUBLIC_URL + "/images/logiclude_dark_mode.png"} alt="logiclude dark" width="100px"/>
+            <h3>NEWS</h3>
+          </div>
           <div className="close_btn" onClick={() => props.closeBtn()}>
             X
           </div>
         </div>
         <div className="mobile_menu_list">
           <ul>
-            <li>HOME</li>
-            <li>SCIENCE</li>
-            <li>GADGETS</li>
-            <li>GAMES</li>
-            <li>STREAMING</li>
-            <li>ABOUT</li>
+            <li><Link to="/" className="link">HOME</Link></li>
+            <li><Link to="/science" className="link">SCIENCE</Link></li>
+            <li><Link to="/gadgets"className="link">GADGETS</Link></li>
+            <li><Link to="/games" className="link">GAMES</Link></li>
+            <li><Link to="/stream"className="link">STREAMING</Link></li>
+            <li><Link to="/about"className="link">ABOUT</Link></li>
+            
           </ul>
         </div>
       </div>

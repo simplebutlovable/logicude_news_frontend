@@ -1,27 +1,50 @@
 .about_component {
-  height: 100vh;
+  width: 95%;
+  margin: 0 auto;
+  height: 90vh;
 }
 
 .about_component .about_details {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  text-align: center;
+  border: 1px solid blue;
+}
+
+.about_component .about_details .about_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .about_component .about_details .about_logo img {
   width: 200px;
 }
 
-.about_component .about_details .dev_info {
+.about_component .about_details .about_logo h2 {
+  margin-left: 0.3rem;
+  font-size: 18px;
+  color: red;
+}
+
+.about_component .about_details .site_social_media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.about_component .about_details .site_social_media ul li img {
+  width: 25px;
+}
+
+.about_component .dev_info {
+  border: 1px solid red;
+  width: 30%;
   margin-top: 2rem;
 }
 
-.about_component .about_details .dev_info .developer_social_media ul {
-  width: 50%;
-  margin: 0 auto;
+.about_component .dev_info .developer_social_media ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +54,19 @@
   list-style: none;
 }
 
-.about_component .about_details .dev_info .developer_social_media ul li img {
+.about_component .dev_info .developer_social_media ul li img {
   width: 25px;
+}
+
+.about_component .donate {
+  background-color: orange;
+  display: inline;
+}
+
+.about_component .donate .donate_link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=about_component.css.map */

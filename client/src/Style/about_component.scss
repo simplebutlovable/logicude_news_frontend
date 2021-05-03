@@ -1,27 +1,30 @@
-.about_component{
-    height: 100vh;
-    
-.about_details{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    .about_logo{
-     
-        img{
-            width: 200px;
+.about_component {
+    width: 95%;
+    margin: 0 auto;
+    height: 90vh;
+
+    .about_details {
+        border: 1px solid blue;
+
+        .about_logo {
+            display: flex;
+            align-items: flex-end;
+
+            img {
+
+                width: 200px;
+            }
+
+            h2 {
+
+                margin-left: 0.3rem;
+                font-size: 18px;
+                color: red;
+            }
         }
-       
-    }
-    .dev_info{
-        margin-top: 2rem;
-        .developer_social_media{
+        .site_social_media{
             ul{
-                width: 50%;
-                margin: 0 auto;
                 display: flex;
-                justify-content: space-evenly;
                 list-style: none;
                 li{
                     img{
@@ -30,6 +33,38 @@
                 }
             }
         }
+
     }
-}
+
+    .dev_info {
+        border: 1px solid red;
+        width: 30%;
+        margin-top: 2rem;
+
+        .developer_social_media {
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                list-style: none;
+
+                li {
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .donate{
+    
+        background-color: orange;
+        display: inline;
+        .donate_link{
+            text-decoration: none;
+            color: white;
+            
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
 }

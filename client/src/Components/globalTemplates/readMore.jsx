@@ -3,7 +3,7 @@ import Moment from "react-moment";
 import Loader from 'react-loader-spinner';
 import { Link } from "react-router-dom";
 import "../../Style/generalTemplates/read-more.css";
-import axiosInstance, { serverURL } from "../../utility/axios";
+import axiosInstance from "../../utility/axios";
 
 function ReadMore(props) {
   const [loader, setLoader] = useState(true);
@@ -45,7 +45,7 @@ function ReadMore(props) {
                   <div className="read_list">
                     <div className="read_news_img">
                       <img
-                        src={`${serverURL}${news.display_image}`}
+                        src={`${news.display_image}`}
                         alt={news.title.substring(0, 15)}
                       />
                     </div>
