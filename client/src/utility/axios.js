@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const serverURL = 'http://192.168.254.168:8000'
+export const serverURL = 'https://devlogiclude.pythonanywhere.com/'
 
 
 const axiosInstance = axios.create({
