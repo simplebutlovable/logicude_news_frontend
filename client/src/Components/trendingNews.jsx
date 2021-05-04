@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Moment from "react-moment";
 import Loader from "react-loader-spinner";
 import axiosInstance from "../utility/axios";
 
 
-function TrendingNews () {
+function TrendingNews() {
   const [loader, setLoader ] = useState(true);
   const [fetchData, setFetchData] = useState(null);
   const [errorLog, setErrorLog] = useState(null);
@@ -58,6 +58,5 @@ function TrendingNews () {
     </React.Fragment>
   );
 }
-
 
 export default TrendingNews;

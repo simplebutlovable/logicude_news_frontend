@@ -3,3 +3,7 @@
   command = "npm run build"
   publish = "/client/build"
 
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200

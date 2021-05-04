@@ -59,7 +59,7 @@ function App() {
             }
           >
             <Switch>
-              <Route exact path="/" component={()=><LandingPage mode={theme}/>} />
+              <Route exact path="/" component={()=><LandingPage />} />
               <Route exact path="/science" component={ScienceComponent} />
               <Route exact path="/gadgets" component={GadgetsComponent} />
               <Route exact path="/games" component={GamesComponent} />
