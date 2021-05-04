@@ -5,7 +5,7 @@
     "client": "cd client && yarn build",
     "server": "cd functions && node server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
-    "build": "cd client && npm instal && npm run build"
+    "build": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "axios": "^0.21.1",
