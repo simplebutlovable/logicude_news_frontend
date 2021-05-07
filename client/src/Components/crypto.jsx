@@ -1,11 +1,12 @@
 import React from "react";
-import "../Style/tweets.css";
+import "../Style/crypto.css";
 // import { Timeline } from "react-twitter-widgets";
 
-function Tweets() {
+function Crypto() {
   return (
     <React.Fragment>
-      <div className="tweets">
+      <div className="crypto">
+        <h1>Crypto Currency</h1>
 {/* 
           <Timeline
             dataSource={{
@@ -22,4 +23,4 @@ function Tweets() {
   );
 }
 
-export default Tweets;
+export default Crypto;

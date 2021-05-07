@@ -281,6 +281,13 @@
   }
 }
 
+.mob_men_active{
+  right: 0;
+}
+.mob_men_inactive{
+  right: -40%;
+}
+
 //global class
 .__link {
   text-decoration: none;
@@ -354,4 +361,30 @@
  }
 }
   
+}
+
+
+@media screen and (max-width: 580px) {
+  .mobile_menu{
+    width: 60%;
+  }
+  .mob_men_active{
+    right: 0;
+  }
+  .mob_men_inactive{
+    right: -60%;
+  }
+
+}
+@media screen and (max-width: 360px) {
+  .mobile_menu{
+    width: 100%;
+  }
+  .mob_men_active{
+    right: 0;
+  }
+  .mob_men_inactive{
+    right: -100%;
+  }
+
 }

@@ -26,6 +26,8 @@ function ScienceComponent() {
         </div>
         <div className="bot_tab_science">
           <BotTabComponent category="science" />
+          <BotTabComponent category="science" />
+          <BotTabComponent category="science" />
         </div>
     
       </div>

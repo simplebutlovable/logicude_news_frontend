@@ -1,14 +1,28 @@
 .about_component {
   width: 95%;
   margin: 0 auto;
-  height: 90vh;
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about_component .about_details {
-  border: 1px solid blue;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  text-align: center;
 }
 
-.about_component .about_details .about_logo {
+.about_component .about_details .about_logo_cover {
+  display: inline-block;
+}
+
+.about_component .about_details .about_logo_cover .about_logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,34 +31,90 @@
           align-items: flex-end;
 }
 
-.about_component .about_details .about_logo img {
+.about_component .about_details .about_logo_cover .about_logo img {
   width: 200px;
 }
 
-.about_component .about_details .about_logo h2 {
+.about_component .about_details .about_logo_cover .about_logo h2 {
   margin-left: 0.3rem;
   font-size: 18px;
   color: red;
 }
 
-.about_component .about_details .site_social_media ul {
+.about_component .about_details .social_media_cover {
+  display: inline-block;
+}
+
+.about_component .about_details .social_media_cover .site_social_media ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  margin: 1rem 0;
 }
 
-.about_component .about_details .site_social_media ul li img {
+.about_component .about_details .social_media_cover .site_social_media ul li img {
   width: 25px;
+  margin: 0 0.75rem;
+}
+
+.about_component .about_details .about_us {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.about_component .about_details .about_us p {
+  font-size: 13px;
+}
+
+.about_component .about_details .collaborate_container {
+  display: inline-block;
+}
+
+.about_component .about_details .collaborate_container .collaborate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about_component .about_details .collaborate_container .collaborate .donate {
+  background-color: orange;
+  display: inline;
+}
+
+.about_component .about_details .collaborate_container .collaborate .donate .donate_link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .about_component .dev_info {
-  border: 1px solid red;
-  width: 30%;
-  margin-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.123);
+  width: 27%;
+  margin: 2rem auto 0 auto;
+}
+
+.about_component .dev_info .dev_info_header {
+  padding: 1rem;
+  background-color: #9eb6f8;
+}
+
+.about_component .dev_info .dev_info_header h3 {
+  font-size: 20px;
+}
+
+.about_component .dev_info .dev_info_list {
+  padding: 0.5rem 1rem;
+}
+
+.about_component .dev_info .dev_info_list p {
+  font-size: 15px;
 }
 
 .about_component .dev_info .developer_social_media ul {
+  width: 80%;
+  margin: 1rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,15 +128,63 @@
   width: 25px;
 }
 
-.about_component .donate {
-  background-color: orange;
-  display: inline;
+@media screen and (max-width: 1133px) {
+  .about_component .dev_info {
+    width: 35%;
+  }
 }
 
-.about_component .donate .donate_link {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
+@media screen and (max-width: 939px) {
+  .about_component .about_details {
+    width: 30%;
+  }
+  .about_component .dev_info {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .about_component {
+    display: block;
+    text-align: center;
+  }
+  .about_component .about_details {
+    width: 100%;
+  }
+  .about_component .dev_info {
+    width: 80%;
+    background-color: transparent;
+  }
+  .about_component .dev_info .dev_info_header {
+    background-color: transparent;
+  }
+  .about_component .dev_info .developer_social_media {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .about_component {
+    display: block;
+    text-align: center;
+  }
+  .about_component .about_details {
+    width: 100%;
+  }
+  .about_component .about_details .about_logo_cover .about_logo img {
+    width: 150px;
+  }
+  .about_component .about_details .about_us {
+    width: 80%;
+    line-height: 20px;
+  }
+  .about_component .dev_info {
+    width: 100%;
+  }
+  .about_component .dev_info .developer_social_media {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=about_component.css.map */

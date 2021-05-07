@@ -23,4 +23,8 @@
   text-decoration: none;
   color: red;
 }
+
+.games .games_header .more_games:hover {
+  color: #a00404;
+}
 /*# sourceMappingURL=games.css.map */

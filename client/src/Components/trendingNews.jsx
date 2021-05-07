@@ -26,6 +26,7 @@ function TrendingNews() {
           setLoader(false);
         }
       });
+      window.scrollTo(0,0);
       return (()=>{
       mount= false;
       });

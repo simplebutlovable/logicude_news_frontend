@@ -1,0 +1,16 @@
+.games_component{
+    width: 95%;
+    margin: 0 auto;
+    min-height: 90vh;
+    .top_games{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mid_games{
+        margin-top: 2rem;
+        display: flex;
+    }
+    .bot_games{
+        margin: 2rem 0;
+    }
+}

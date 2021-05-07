@@ -1,5 +1,5 @@
 import React from "react";
-import Tweets from "./tweets";
+import Crypto from "./crypto";
 import Science from "./science";
 import Gadgets from "./gadgets";
 import Games from "./games";
@@ -65,7 +65,7 @@ function LandingPage (props) {
             </div>
           </div>
           <div className="tweeter_feed">
-            <Tweets />
+            <Crypto />
           </div>
         </div>
 

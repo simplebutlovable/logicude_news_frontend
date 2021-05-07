@@ -1,8 +1,15 @@
 .gadgets_component{
     width: 95%;
     margin: 0 auto;
+    min-height: 100vh;
     .top_gadgets{
+        margin-top: 2rem;
         display: flex;
         flex-wrap: wrap;
+    }
+    .mid_gadgets{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 }

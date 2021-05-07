@@ -11,7 +11,9 @@ function TopTabComponent(props) {
 
 useEffect(()=>{
     let mount = true;
-    axiosInstance.get(`api/news/${props.category}/top/`).then((res)=>{
+    let start_index = 0;
+    let end_index = 10;
+    axiosInstance.get(`api/news/category/${props.category}/${start_index}/${end_index}/`).then((res)=>{
         if (mount){
         setFetchData(res.data);
         setLoader(false);
@@ -23,6 +25,7 @@ useEffect(()=>{
             setLoader(false)
         }
     })
+    window.scrollTo(0,0);
     return (()=>{
         mount = false;
     });

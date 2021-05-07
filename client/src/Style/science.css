@@ -23,4 +23,8 @@
   text-decoration: none;
   color: red;
 }
+
+.science .science_header .more_science:hover {
+  color: #a00404;
+}
 /*# sourceMappingURL=science.css.map */

@@ -251,7 +251,7 @@ function MobileMenu(props) {
         className={
           props.menuState ? "mobile_menu mob_men_active" : "mobile_menu mob_men_inactive"
         }
-        style={props.menuState ? { right: "0" } : { right: "-40%" }}
+      
       >
         <div className="mobile_menu_header">
           <div className="mobile_site_logo">

@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "tweets.scss"
+        "crypto.scss"
     ],
     "names": [],
-    "file": "tweets.css"
+    "file": "crypto.css"
 }

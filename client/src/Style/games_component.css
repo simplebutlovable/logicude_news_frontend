@@ -1,0 +1,26 @@
+.games_component {
+  width: 95%;
+  margin: 0 auto;
+  min-height: 90vh;
+}
+
+.games_component .top_games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.games_component .mid_games {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.games_component .bot_games {
+  margin: 2rem 0;
+}
+/*# sourceMappingURL=games_component.css.map */

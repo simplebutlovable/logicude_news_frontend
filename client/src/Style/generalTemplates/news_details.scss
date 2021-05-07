@@ -1,6 +1,7 @@
 .news_feed {
   width: 85%;
   margin: 2rem auto;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
 }
@@ -35,13 +36,16 @@
 .category {
   margin-top: 2rem;
   display: inline-block;
-  background-color: rgb(187, 5, 5);
+  background-color: rgb(207, 0, 0);
   padding: 0.2rem 0.5rem;
   color: white;
-
+  transition: 0.2s ease-in-out;
   .cat_list {
     color: white;
     text-decoration: none;
+  }
+  &:hover{
+    background-color: rgb(228, 0, 0);
   }
 }
 

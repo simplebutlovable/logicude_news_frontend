@@ -1,6 +1,7 @@
 .news_feed {
   width: 85%;
   margin: 2rem auto;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,14 +36,20 @@
 .category {
   margin-top: 2rem;
   display: inline-block;
-  background-color: #bb0505;
+  background-color: #cf0000;
   padding: 0.2rem 0.5rem;
   color: white;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .category .cat_list {
   color: white;
   text-decoration: none;
+}
+
+.category:hover {
+  background-color: #e40000;
 }
 
 .f_post_details {

@@ -11,8 +11,10 @@ function ReadMore(props) {
   const [errorLog, setErrorLog] = useState(null);
 
   useEffect(() => {
+    let start_index = 0;
+    let end_index = 7;
     axiosInstance
-      .get(`/api/news/readmore/${props.category}/${props.id}/`)
+      .get(`/api/news/suggested/${props.category}/${props.id}/${start_index}/${end_index}/`)
       .then((res) => {
         setFetchData(res.data);
         setLoader(false);
@@ -32,7 +34,7 @@ function ReadMore(props) {
   }
 
   if (errorLog !== null){
-    return (<p>Something went wrong :/</p>)
+    return (<p>404 Not Found</p>)
   }
 
   return (

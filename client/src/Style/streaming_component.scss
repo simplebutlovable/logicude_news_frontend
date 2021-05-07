@@ -1,8 +1,9 @@
-.science_component {
+
+.streaming_component {
     width: 95%;
     margin: 0 auto;
     min-height: 100vh;
-    .latest_science_section {
+    .latest_streaming_section {
         margin-top: 2rem;
         display: flex;
         justify-content: space-between;
@@ -11,7 +12,7 @@
         
     }
 
-    .bot_tab_science{
+    .bot_tab_streaming{
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -30,13 +31,13 @@
 // Media Query
 
 @media screen and (max-width : 1100px){
-    .science_component{
-        .latest_science_section{
+    .streaming_component{
+        .latest_streaming_section{
             display: block;
-            .single_science_card{
+            .single_streaming_card{
                 width: 100%;
             }
-            .other_science_news{
+            .other_streaming_news{
                 width: 85%;
                 margin: 0 auto;
             }
@@ -46,13 +47,13 @@
 
 
 @media screen and (max-width : 800px){
-    .science_component{
-        .latest_science_section{
-            .single_science_card{
-              .main_science_content{
+    .streaming_component{
+        .latest_streaming_section{
+            .single_streaming_card{
+              .main_streaming_content{
                 width: 100%;
                 display: block;
-                .master_science_card{
+                .master_streaming_card{
                     width: 85%;
                     margin: 1rem auto;  
                 }

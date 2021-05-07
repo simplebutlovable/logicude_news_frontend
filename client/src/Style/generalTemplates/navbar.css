@@ -308,6 +308,14 @@
   padding: 0.3rem 0;
 }
 
+.mob_men_active {
+  right: 0;
+}
+
+.mob_men_inactive {
+  right: -40%;
+}
+
 .__link {
   text-decoration: none;
   padding: 0 0.2rem 0.1rem 0.2rem;
@@ -347,6 +355,30 @@
 @media screen and (max-width: 630px) {
   .navbar .menu .realtime_date_section {
     display: none;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .mobile_menu {
+    width: 60%;
+  }
+  .mob_men_active {
+    right: 0;
+  }
+  .mob_men_inactive {
+    right: -60%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .mobile_menu {
+    width: 100%;
+  }
+  .mob_men_active {
+    right: 0;
+  }
+  .mob_men_inactive {
+    right: -100%;
   }
 }
 /*# sourceMappingURL=navbar.css.map */

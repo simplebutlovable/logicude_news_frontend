@@ -11,8 +11,10 @@ function LatestTabComponent(props) {
   const [errorLog, setErrorLog] = useState(null);
   useEffect(() => {
     let mount = true;
+    let start_index = 0;
+    let end_index = 5;
     axiosInstance
-      .get(`api/news/${props.category}/latest`)
+      .get(`api/news/category/${props.category}/${start_index}/${end_index}/`)
       .then((res) => {
         if (mount) {
           setFetchData(res.data);

@@ -1,48 +1,103 @@
 .about_component {
     width: 95%;
     margin: 0 auto;
-    height: 90vh;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
 
     .about_details {
-        border: 1px solid blue;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        text-align: center;
 
-        .about_logo {
-            display: flex;
-            align-items: flex-end;
-
-            img {
-
-                width: 200px;
-            }
-
-            h2 {
-
-                margin-left: 0.3rem;
-                font-size: 18px;
-                color: red;
-            }
-        }
-        .site_social_media{
-            ul{
+        .about_logo_cover {
+            display: inline-block;
+            .about_logo {
                 display: flex;
-                list-style: none;
-                li{
-                    img{
-                        width: 25px;
-                    }
+                align-items: flex-end;
+
+                img {
+                    width: 200px;
+                }
+
+                h2 {
+                    margin-left: 0.3rem;
+                    font-size: 18px;
+                    color: red;
                 }
             }
         }
 
+        .social_media_cover {
+            display: inline-block;
+            .site_social_media {
+                ul {
+                    display: flex;
+                    list-style: none;
+                    margin: 1rem 0;
+                    li {
+                        img {
+                            width: 25px;
+                            margin: 0 0.75rem;
+                        }
+                    }
+                }
+            }
+
+        }
+        .about_us{
+            width: 50%;
+            margin: 2rem auto;
+            p{
+               font-size: 13px;
+            }
+        }
+ .collaborate_container{
+     display: inline-block;
+    .collaborate{
+        display: flex;
+        .donate {
+
+            background-color: orange;
+            display: inline;
+        
+            .donate_link {
+                text-decoration: none;
+                color: white;
+        
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+ }
     }
 
     .dev_info {
-        border: 1px solid red;
-        width: 30%;
-        margin-top: 2rem;
-
+        background-color: rgba(0, 0, 0, 0.123);
+        width: 27%;
+        margin: 2rem auto 0 auto;
+        .dev_info_header{
+            padding: 1rem;
+            background-color: rgb(158, 182, 248);
+            h3{
+                font-size: 20px;
+            }
+        }
+        .dev_info_list{
+            padding:0.5rem 1rem;
+            p{
+                font-size: 15px;
+            }
+        }
         .developer_social_media {
+            
             ul {
+                
+                width: 80%;
+                margin: 1rem auto;
                 display: flex;
                 justify-content: space-evenly;
                 list-style: none;
@@ -55,16 +110,78 @@
             }
         }
     }
-    .donate{
-    
-        background-color: orange;
-        display: inline;
-        .donate_link{
-            text-decoration: none;
-            color: white;
-            
-            font-size: 20px;
-            font-weight: 400;
+
+}
+
+
+
+//Media Query
+@media screen and (max-width: 1133px){
+    .about_component{
+      
+        .dev_info{
+            width: 35%;
+
+        }
+    }
+}
+@media screen and (max-width: 939px){
+    .about_component{
+      .about_details{
+          width: 30%;
+      }
+        .dev_info{
+            width: 40%;
+         
+        }
+    }
+}
+@media screen and (max-width: 805px){
+    .about_component{
+        display: block;
+        text-align: center;
+      .about_details{
+          width: 100%;
+      }
+        .dev_info{
+            width: 80%;
+            background-color: transparent;
+      
+            .dev_info_header{
+                background-color: transparent;
+            }
+            .developer_social_media{
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 380px){
+    .about_component{
+        display: block;
+        text-align: center;
+      .about_details{
+          width: 100%;
+          .about_logo_cover{
+              .about_logo{
+                  img{
+                      width: 150px;
+                  }
+              }
+          }
+          .about_us{
+              width: 80%;
+              line-height: 20px;
+          }
+      }
+        .dev_info{
+            width: 100%;
+           
+            .developer_social_media{
+                width: 100%;
+                margin: 0 auto;
+            }
         }
     }
 }

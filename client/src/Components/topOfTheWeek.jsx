@@ -11,8 +11,10 @@ function TopOfTheWeek() {
   const [errorLog, setErrorLog] = useState(null);
   useEffect(() => {
     let mount = true;
+    let start_index = 0;
+    let end_index = 10;
     axiosInstance
-      .get("/api/news/topoftheweek/")
+      .get(`/api/news/topoftheweek/${start_index}/${end_index}/`)
       .then((res) => {
       if (mount){
         setNewsList(res.data);

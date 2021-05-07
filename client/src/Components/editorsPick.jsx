@@ -11,8 +11,10 @@ function EditorsPick() {
   const [errorLog, setErrorLog] = useState(null);
   useEffect(() => {
     let mount = true;
+    let start_index = 0;
+    let end_index  = 10;
     axiosInstance
-      .get("/api/news/editorspick/", {
+      .get(`/api/news/editorspick/${start_index}/${end_index}/`, {
         timeout: 10000,
       })
       .then((res) => {

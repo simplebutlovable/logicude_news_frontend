@@ -10,7 +10,7 @@ function Footer(props) {
           <div className="footer_info">
             <img src={props.mode === 'light' ?lightTheme.site_img : darkTheme.site_img } alt="logiclude"/>
             <p>&copy; logiclude inc.</p>
-            <p>Designed and Maintaned by :@simplebutlovable</p>
+            <p>Designed and Maintaned by :Dev_Joe</p>
             <p>All Rights Reserved {new Date().getFullYear()}</p>
           </div>
           <div className="advertise">

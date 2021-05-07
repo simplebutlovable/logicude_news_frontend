@@ -15,25 +15,36 @@ function NewsDetails(props) {
   const [alsoReadContent, setAsloReadContent] = useState(null);
   const [alsoReadError, setAlsoReadError] = useState(null);
   useEffect(() => {
+    let mount = true;
     axiosInstance
+ 
       .get(`/api/news/details/${props.match.params.id}/`)
       .then((res) => {
+       if (mount){
         setNewsContent(res.data);
         setloader(false);
+       }
       })
       .catch((err) => {
-        setErrorLog(err.response);
+        if (mount){
+          setErrorLog(err.response);
         setloader(false);
+        }
       });
 
     window.scrollTo(0, 0);
+    return (()=>{
+      mount = false;
+    })
   }, [props.match.params.id]);
 
   useEffect(() => {
     if (newsContent !== null) {
+      let start_index = 0;
+      let end_index  = 4;
       axiosInstance
         .get(
-          `/api/news/alsoread/${newsContent.category}/${props.match.params.id}`
+          `/api/news/suggested/${newsContent.category}/${props.match.params.id}/${start_index}/${end_index}/`
         )
         .then((res) => {
           setAsloReadContent(res.data);
@@ -46,6 +57,7 @@ function NewsDetails(props) {
 
   if (errorLog !== null) {
     console.log("Error: ", errorLog);
+    return (<div>Something went wrong :/</div>)
   }
   function clearState() {
     setNewsContent(null);

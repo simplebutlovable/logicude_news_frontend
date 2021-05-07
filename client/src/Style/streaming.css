@@ -23,4 +23,8 @@
   text-decoration: none;
   color: red;
 }
+
+.streaming .streaming_header .more_streaming:hover {
+  color: #a00404;
+}
 /*# sourceMappingURL=streaming.css.map */

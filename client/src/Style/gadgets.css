@@ -23,4 +23,8 @@
   text-decoration: none;
   color: red;
 }
+
+.gadgets .gadgets_header .more_gadgets:hover {
+  color: #a00404;
+}
 /*# sourceMappingURL=gadgets.css.map */
