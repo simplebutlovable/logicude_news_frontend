@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 // export const serverURL = 'https://devlogiclude.pythonanywhere.com/'
-export const serverURL = 'logicludebackend.pythonanywhere.com';
+export const serverURL = 'https://logicludebackend.pythonanywhere.com';
+// export const serverURL = 'http://192.168.254.168:8000'
 
 
 

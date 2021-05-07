@@ -42,11 +42,10 @@ function TrendingNews() {
   if (errorLog !== null) {
     return <p style={{ textAlign: "center" }}>Something went wrong :/</p>;
   }
-  if (fetchData === null){
-    return (<div>Not Found </div>);
-  }
+ 
   return (
     <React.Fragment>
+    {console.log("FetchData",fetchData)}
       <ul>
         {fetchData.map((data) => (
           <li key={data.id}>
