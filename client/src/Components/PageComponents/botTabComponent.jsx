@@ -29,7 +29,7 @@ function BotTabComponent(props) {
     return () => {
       mount = false;
     };
-  }, [props.category]);
+  }, [props.category, props.ei, props.si]);
 
   if (loader) {
     return (
