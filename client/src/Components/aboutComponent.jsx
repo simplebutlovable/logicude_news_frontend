@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { darkTheme, lightTheme } from "../utility/Themes";
 import "../Style/about_component.css";
 import { Link } from "react-router-dom";
 
 function AboutComponent(props) {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   return (
     <React.Fragment>
       <Helmet>
