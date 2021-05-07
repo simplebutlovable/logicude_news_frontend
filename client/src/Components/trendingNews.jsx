@@ -42,6 +42,9 @@ function TrendingNews() {
   if (errorLog !== null) {
     return <p style={{ textAlign: "center" }}>Something went wrong :/</p>;
   }
+  if (fetchData === null){
+    return (<div>Not Found </div>);
+  }
   return (
     <React.Fragment>
       <ul>
