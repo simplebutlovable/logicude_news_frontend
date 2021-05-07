@@ -41,7 +41,7 @@ function NewsDetails(props) {
   useEffect(() => {
     if (newsContent !== null) {
       let start_index = 0;
-      let end_index  = 4;
+      let end_index  = 6;
       axiosInstance
         .get(
           `/api/news/suggested/${newsContent.category}/${props.match.params.id}/${start_index}/${end_index}/`

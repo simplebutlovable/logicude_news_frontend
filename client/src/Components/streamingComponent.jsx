@@ -24,9 +24,9 @@ function StreamingComponent() {
           <OtherTabComponent category="stream" />
         </div>
         <div className="bot_tab_streaming">
-          <BotTabComponent category="stream" />
-          <BotTabComponent category="stream" />
-          <BotTabComponent category="stream" />
+          <BotTabComponent category="stream" si={9} ei={15}/>
+          <BotTabComponent category="stream" si={16} ei={22}/>
+          <BotTabComponent category="stream"si={23} ei={29} />
         </div>
       </div>
     </React.Fragment>

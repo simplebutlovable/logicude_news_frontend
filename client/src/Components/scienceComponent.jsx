@@ -25,9 +25,9 @@ function ScienceComponent() {
           <OtherTabComponent category="science" />
         </div>
         <div className="bot_tab_science">
-          <BotTabComponent category="science" />
-          <BotTabComponent category="science" />
-          <BotTabComponent category="science" />
+          <BotTabComponent category="science" si={9} ei={15} />
+          <BotTabComponent category="science" si={16} ei={22}/>
+          <BotTabComponent category="science" si={23} ei={29}/>
         </div>
     
       </div>

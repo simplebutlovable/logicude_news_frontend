@@ -11,8 +11,8 @@ function ReadMore(props) {
   const [errorLog, setErrorLog] = useState(null);
 
   useEffect(() => {
-    let start_index = 0;
-    let end_index = 7;
+    let start_index = 7;
+    let end_index = 14;
     axiosInstance
       .get(`/api/news/suggested/${props.category}/${props.id}/${start_index}/${end_index}/`)
       .then((res) => {

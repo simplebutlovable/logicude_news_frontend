@@ -15,9 +15,9 @@ function GamesComponent() {
       </Helmet>
       <div className="games_component">
         <div className="top_games">
-          <BotTabComponent category="games"/>
-          <BotTabComponent category="games"/>
-          <BotTabComponent category="games"/>
+          <BotTabComponent category="games" si={9} ei={15}/>
+          <BotTabComponent category="games"si={16} ei={22}/>
+          <BotTabComponent category="games"si={23} ei={29}/>
         </div>
         <div className="mid_games">
           <LatestTabComponent category="games"/>

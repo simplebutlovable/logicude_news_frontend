@@ -20,9 +20,9 @@ function GadgetsComponent() {
             <OtherTabComponent category="gadgets"/>
           </div>
           <div className="mid_gadgets">
-            <BotTabComponent category="gadgets"/>
-            <BotTabComponent category="gadgets"/>
-            <BotTabComponent category="gadgets"/>
+            <BotTabComponent category="gadgets"si={9} ei={15}/>
+            <BotTabComponent category="gadgets" si={16} ei={22}/>
+            <BotTabComponent category="gadgets"si={23} ei={29}/>
           </div>
           <div className="bot_gadgets">
             <TopTabComponent category="gadgets"/>

@@ -12,10 +12,8 @@ function BotTabComponent(props) {
 
   useEffect(() => {
     let mount = true;
-    let start_index = 0;
-    let end_index = 10;
     axiosInstance
-      .get(`api/news/category/${props.category}/${start_index}/${end_index}/`)
+      .get(`api/news/category/${props.category}/${props.si}/${props.ei}/`)
       .then((res) => {
         if (mount) {
           setFetchData(res.data);

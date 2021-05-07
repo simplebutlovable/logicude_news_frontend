@@ -11,8 +11,8 @@ function TopTabComponent(props) {
 
 useEffect(()=>{
     let mount = true;
-    let start_index = 0;
-    let end_index = 10;
+    let start_index = 5;
+    let end_index = 11;
     axiosInstance.get(`api/news/category/${props.category}/${start_index}/${end_index}/`).then((res)=>{
         if (mount){
         setFetchData(res.data);

@@ -12,7 +12,7 @@ function OtherTabComponent(props) {
   useEffect(() => {
     let mount = true;
     let start_index = 0;
-    let end_index = 10;
+    let end_index = 4;
     axiosInstance
       .get(`api/news/category/${props.category}/${start_index}/${end_index}/`)
       .then((res) => {

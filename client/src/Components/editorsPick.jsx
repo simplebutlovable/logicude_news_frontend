@@ -12,7 +12,7 @@ function EditorsPick() {
   useEffect(() => {
     let mount = true;
     let start_index = 0;
-    let end_index  = 10;
+    let end_index  = 8;
     axiosInstance
       .get(`/api/news/editorspick/${start_index}/${end_index}/`, {
         timeout: 10000,
